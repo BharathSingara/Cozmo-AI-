@@ -1,0 +1,136 @@
+{
+  "sweep": {
+    "id": "synthetic-example-not-session",
+    "captured_at": "2026-10-09T16:28:43.405777+00:00",
+    "device": "SYNTHETIC FIXTURE - NOT REAL CLAIM",
+    "duration_s": 0.0,
+    "country": "IN",
+    "currency": "INR",
+    "finished_at": "2026-10-09T16:28:43.405824+00:00"
+  },
+  "room": {
+    "length_m": null,
+    "width_m": null,
+    "height_m": null,
+    "floor_area_m2": null,
+    "floor_area_ft2": null,
+    "wall_area_m2": null,
+    "wall_area_ft2": null,
+    "shelved_wall_area_m2": null,
+    "scale_method": null,
+    "shape": null,
+    "confidence": 0.0,
+    "uncertainty": "No metric measurement; synthetic sample",
+    "geometry_evidence_refs": []
+  },
+  "books": [
+    {
+      "id": "synthetic-book-1",
+      "shelf": "Synthetic Shelf",
+      "position": 1,
+      "frame_ref": "frames/synthetic_frame.jpg",
+      "status": "unidentified",
+      "title": null,
+      "author": null,
+      "publisher": null,
+      "edition": null,
+      "isbn": null,
+      "spine_height_cm": null,
+      "spine_thickness_cm": null,
+      "height_measurement": null,
+      "thickness_measurement": null,
+      "id_confidence": 0.0,
+      "measurement_confidence": 0.0,
+      "valuation_confidence": 0.0,
+      "replacement_cost": {
+        "amount": null,
+        "currency": null,
+        "source": null,
+        "url": null,
+        "retrieved_at": null,
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "condition_assumed": null,
+        "match_confidence": null,
+        "unavailable_reason": null
+      },
+      "used_value": {
+        "amount": null,
+        "currency": null,
+        "source": null,
+        "url": null,
+        "retrieved_at": null,
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "condition_assumed": null,
+        "match_confidence": null,
+        "unavailable_reason": null
+      },
+      "bbox": [
+        120,
+        72,
+        158,
+        338
+      ],
+      "evidence_refs": [
+        "frames/synthetic_frame.jpg"
+      ],
+      "detection_source": "explicit_synthetic_schema_fixture",
+      "ocr_text": null,
+      "notes": [
+        "Synthetic artwork drawn by script; not a real detected book; do not use in model evaluation"
+      ],
+      "excluded": false
+    }
+  ],
+  "items": [],
+  "totals": {
+    "book_count": 1,
+    "books_identified": 0,
+    "books_unidentified": 1,
+    "shelf_run_m": null,
+    "books_replacement_cost": 0.0,
+    "books_used_value": 0.0,
+    "items_replacement_cost_low": 0.0,
+    "items_replacement_cost_high": 0.0,
+    "excluded_from_totals": 0,
+    "unpriced_books": 1,
+    "unpriced_items": 0,
+    "currency": "INR"
+  },
+  "review_queue": [
+    {
+      "ref_id": "synthetic-book-1",
+      "reason": "Unreadable spine / unidentified book"
+    },
+    {
+      "ref_id": "synthetic-book-1",
+      "reason": "No defensible metric scale or dimensions unavailable"
+    },
+    {
+      "ref_id": "synthetic-book-1",
+      "reason": "Replacement market price unverified"
+    },
+    {
+      "ref_id": "synthetic-book-1",
+      "reason": "Used-market price unverified"
+    },
+    {
+      "ref_id": "room",
+      "reason": "Room scale/geometry not established"
+    }
+  ],
+  "stage_timings_ms": {},
+  "stage_api_calls": {},
+  "cost": {
+    "measured_usd": null,
+    "estimated_usd": null,
+    "reason": "Provider usage and pricing not available"
+  },
+  "warnings": [
+    "SYNTHETIC SCHEMA EXAMPLE ONLY: no real camera capture, no actual prices, no measured room dimensions"
+  ],
+  "audit_log": []
+}
